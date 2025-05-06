@@ -5,8 +5,7 @@ export default defineConfig({
   title: "SeaSlug",
   description: "Java 和 Vue 练手项目",
   head: [
-    ['link', { rel: 'icon', href: 'img/logo.png' }],
-    // ['link', { rel: 'icon', href: '/img/favicon.ico' }],
+    ['link', { rel: 'icon', href: 'img/favicon.ico' }],
     ['meta', { name: 'theme-color', content: '#3eaf7c' }],
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
