@@ -6,7 +6,9 @@ hero:
   name: "SeaSlug"
   text: "Java 和 Vue 练手项目"
   tagline: 保持更新
-  image: /img/bilibili.svg
+  image:
+    src: "./img/logo.png"
+    alt: SeaSlug
   actions:
     - theme: brand
       text: 快速开始
@@ -16,7 +18,7 @@ hero:
       link: /api-examples
 
 features:
-  - title: 特点 A
+  - title: 📝特点 A
     details: Lorem ipsum dolor sit amet, 1
   - title: 特点 B
     details: Lorem ipsum dolor sit amet, 2
