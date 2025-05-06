@@ -11,6 +11,7 @@ export default defineConfig({
     ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
+  srcDir: './src',
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
@@ -40,7 +41,9 @@ export default defineConfig({
     },
     nav: [
       { text: '首页', link: '/' },
-      { text: '操作文档', link: '/markdown-examples' }
+      { text: '操作文档', link: '/markdown-examples' },
+      { text: '操作文档1', link: '/1111' },
+      { text: '操作文档2', link: '/2222' },
     ],
     outlineTitle: '目录',
     outline: [2, 6],
