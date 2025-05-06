@@ -39,14 +39,37 @@ export default defineConfig({
         }
       }
     },
+    outlineTitle: '目录',
+    outline: [2, 6],
     nav: [
       { text: '首页', link: '/' },
       { text: '操作文档', link: '/markdown-examples' },
-      { text: '操作文档1', link: '/1111' },
-      { text: '操作文档2', link: '/2222' },
+      { text: '参考',
+        items: [
+          { text: 'Java',
+            items: [
+              { text: 'Java', link: '/java/java-base' },
+              { text: 'Vue', link: '/vue/vue-base' },
+              { text: 'Vuex', link: '/vuex/vuex-base' },
+              { text: 'Vue Router', link: '/vue-router/vue-router-base' },
+              { text: 'Vite', link: '/vite/vite-base' },
+            ]
+          },
+          { text: 'Vue', link: '/vue/vue-base' },
+          { text: 'Vuex',
+            items: [
+              { text: 'Java', link: '/java/java-base' },
+              { text: 'Vue', link: '/vue/vue-base' },
+              { text: 'Vuex', link: '/vuex/vuex-base' },
+              { text: 'Vue Router', link: '/vue-router/vue-router-base' },
+              { text: 'Vite', link: '/vite/vite-base' },
+            ]
+          },
+          { text: 'Vue Router', link: '/vue-router/vue-router-base' },
+          { text: 'Vite', link: '/vite/vite-base' },
+        ]
+      },
     ],
-    outlineTitle: '目录',
-    outline: [2, 6],
     sidebar: [
       {
         text: 'Examples',
@@ -54,15 +77,38 @@ export default defineConfig({
           { text: 'Markdown Examples', link: '/markdown-examples' },
           { text: 'Runtime API Examples', link: '/api-examples' }
         ]
-      }
+      },
+      {
+        text: 'Examples2',
+        items: [
+          { text: 'Markdown Examples2', link: '/markdown-examples' },
+          { text: 'Runtime API Examples2', link: '/api-examples' }
+        ]
+      },
     ],
+    editLink: {
+      pattern: 'https://gitee.com/roch57/seaslug-web/tree/master/src/:path',
+      text: '编辑本页'
+    },
+    lastUpdated: {
+      text: '最后更新于',
+      formatOptions: {
+        year: 'numeric',
+        month: 'numeric',
+        day: 'numeric',
+        hour: '2-digit',
+        minute: '2-digit',
+        second: '2-digit',
+        hour12: false,
+      }
+    },
     docFooter: {
       prev: '上一页',
       next: '下一页'
     },
     footer: {
-      message: 'Released under the MIT License.',
-      copyright: 'Copyright © 2019-present Evan You'
+      copyright: `Copyright © 2024-${new Date().getFullYear()} Roch57<br>
+      <a href="https://opensource.org/licenses/MIT" target="_blank">MIT Licensed</a>`
     },
     socialLinks: [
       { icon: 'github', 

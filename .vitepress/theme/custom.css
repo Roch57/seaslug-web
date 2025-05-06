@@ -1,0 +1,5 @@
+
+.vp-nav-divider {
+    border-color: #eee !important; /* 修改颜色 */
+    margin: 0 12px !important;     /* 调整间距 */
+  }

@@ -17,10 +17,10 @@ hero:
 
 features:
   - title: 特点 A
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Lorem ipsum dolor sit amet, 1
   - title: 特点 B
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Lorem ipsum dolor sit amet, 2
   - title: 特点 C
-    details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+    details: Lorem ipsum dolor sit amet, 3
 ---
 
