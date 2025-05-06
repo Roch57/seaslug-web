@@ -12,7 +12,6 @@ export default defineConfig({
     ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
   ],
   srcDir: 'src',
-  outDir: '.vitepress/dist',
   cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
