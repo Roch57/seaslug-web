@@ -71,22 +71,29 @@ export default defineConfig({
         ]
       },
     ],
-    sidebar: [
-      {
-        text: 'Examples',
-        items: [
-          { text: 'Markdown Examples', link: '/markdown-examples' },
-          { text: 'Runtime API Examples', link: '/api-examples' }
-        ]
-      },
-      {
-        text: 'Examples2',
-        items: [
-          { text: 'Markdown Examples2', link: '/markdown-examples' },
-          { text: 'Runtime API Examples2', link: '/api-examples' }
-        ]
-      },
-    ],
+    sidebar: {
+      '/guide/': [
+        {
+          text: '基础',
+          items: [
+            { text: '简介1', link: '/guide/' },
+            { text: '简介', link: '/guide/1111' },
+            { text: '快速开始', link: '/guide/2222' }
+          ]
+        },
+        {
+          text: '进阶',
+          items: [
+            { text: '配置', link: '/guide/1111' },
+            { text: '插件', link: '/guide/2222' }
+          ]
+        }
+      ],
+      '/reference/': [
+        { text: 'API 概览', link: '/reference/' },
+        { text: '配置项', link: '/reference/1111' }
+      ]
+    },
     editLink: {
       pattern: 'https://gitee.com/roch57/seaslug-web/tree/master/src/:path',
       text: '编辑本页'
