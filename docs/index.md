@@ -6,6 +6,7 @@ hero:
   name: "SeaSlug"
   text: "Java 和 Vue 练手项目"
   tagline: 保持更新
+  image: /img/bilibili.svg
   actions:
     - theme: brand
       text: 快速开始

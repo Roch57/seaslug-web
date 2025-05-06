@@ -4,13 +4,46 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "SeaSlug",
   description: "Java 和 Vue 练手项目",
+  head: [
+    ['link', { rel: 'icon', href: '/img/bilibili.svg' }],
+    // ['link', { rel: 'icon', href: '/img/favicon.ico' }],
+    ['meta', { name: 'theme-color', content: '#3eaf7c' }],
+    ['meta', { name: 'apple-mobile-web-app-capable', content: 'yes' }],
+    ['meta', { name: 'apple-mobile-web-app-status-bar-style', content: 'black' }]
+  ],
+  cleanUrls: true,
   themeConfig: {
     // https://vitepress.dev/reference/default-theme-config
+    search: {
+      provider: 'local',
+      // options are passed on to the search provider
+      // https://github.com/algolia/autocomplete.js#options
+      options: {
+        // ...
+        translations: {
+          button: {
+            buttonText: '搜索文档',
+            buttonAriaLabel: '搜索文档'
+          },
+          modal: {
+            noResultsText: '无法找到相关结果',
+            resetButtonTitle: '清除查询条件',
+            displayDetails: '显示结果详情',
+            footer: {
+              selectText: '选择',
+              navigateText: '切换',
+              closeText: '关闭'
+            }
+          }
+        }
+      }
+    },
     nav: [
       { text: '首页', link: '/' },
       { text: '操作文档', link: '/markdown-examples' }
     ],
-
+    outlineTitle: '目录',
+    outline: [2, 6],
     sidebar: [
       {
         text: 'Examples',
