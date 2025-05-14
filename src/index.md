@@ -5,7 +5,7 @@ layout: home
 hero:
   name: "SeaSlug"
   text: "Java 和 Vue 练手项目"
-  tagline: 保持更新
+  tagline: "易上手，功能强大，代码规范，持续更新"
   image:
     src: "img/logo_v3.0.png"
     alt: SeaSlug
